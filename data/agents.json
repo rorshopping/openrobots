@@ -1,0 +1,584 @@
+[
+  {
+    "name": "AI2Bot",
+    "operator": "Ai2",
+    "category": "training",
+    "purpose": "Allen Institute for AI crawler that builds open training corpora.",
+    "respectsRobots": true,
+    "website": "https://allenai.org/crawler"
+  },
+  {
+    "name": "Ai2Bot-Dolma",
+    "operator": "Ai2",
+    "category": "training",
+    "purpose": "Collects content for Ai2's open Dolma training dataset.",
+    "respectsRobots": true,
+    "website": "https://allenai.org/crawler"
+  },
+  {
+    "name": "Amazonbot",
+    "operator": "Amazon",
+    "category": "scraper",
+    "purpose": "Amazon crawler for Alexa answers and service improvements.",
+    "respectsRobots": true
+  },
+  {
+    "name": "AmazonBuyForMe",
+    "operator": "Amazon",
+    "category": "assistant",
+    "purpose": "Browses shopping sites during Amazon's Buy For Me agent purchases.",
+    "website": "https://amazon.com"
+  },
+  {
+    "name": "Amzn-User",
+    "operator": "Amazon",
+    "category": "assistant",
+    "purpose": "Fetches pages an Amazon AI assistant user explicitly requested."
+  },
+  {
+    "name": "Andibot",
+    "operator": "Andi",
+    "category": "search",
+    "purpose": "Crawls for Andi's generative-AI search engine.",
+    "website": "https://andisearch.com/"
+  },
+  {
+    "name": "anthropic-ai",
+    "operator": "Anthropic",
+    "category": "training",
+    "purpose": "Fetches web content used in training Anthropic models.",
+    "website": "https://www.anthropic.com"
+  },
+  {
+    "name": "Applebot",
+    "operator": "Apple",
+    "category": "search",
+    "purpose": "Powers Apple Search, Siri and Spotlight results.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Applebot-Extended",
+    "operator": "Apple",
+    "category": "training",
+    "purpose": "Opt-in crawler whose data powers Apple Intelligence; blocking it does not affect Applebot Search.",
+    "respectsRobots": true,
+    "website": "https://support.apple.com/en-us/119829#datausage"
+  },
+  {
+    "name": "Awario",
+    "operator": "Awario",
+    "category": "scraper",
+    "purpose": "Scrapes web and social mentions for Awario's social listening tool."
+  },
+  {
+    "name": "bedrockbot",
+    "operator": "Amazon",
+    "category": "training",
+    "purpose": "Amazon crawler that gathers data for custom models built on AWS Bedrock.",
+    "respectsRobots": true,
+    "website": "https://amazon.com"
+  },
+  {
+    "name": "Bravebot",
+    "operator": "Brave Search",
+    "category": "search",
+    "purpose": "Crawls the web for Brave Search's independent index and AI answers.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Brightbot 1.0",
+    "operator": "Bright Data",
+    "category": "scraper",
+    "purpose": "Bright Data crawler that collects web data, including for LLM training."
+  },
+  {
+    "name": "Bytespider",
+    "operator": "ByteDance",
+    "category": "training",
+    "purpose": "ByteDance crawler that collects AI training data; known for aggressive crawling.",
+    "respectsRobots": false
+  },
+  {
+    "name": "CCBot",
+    "operator": "Common Crawl Foundation",
+    "category": "training",
+    "purpose": "Feeds the open Common Crawl corpus used in many LLM training sets.",
+    "respectsRobots": true,
+    "website": "https://commoncrawl.org"
+  },
+  {
+    "name": "ChatGPT Agent",
+    "operator": "OpenAI",
+    "category": "assistant",
+    "purpose": "Browses the web on a user's behalf during ChatGPT agent tasks.",
+    "respectsRobots": true,
+    "website": "https://openai.com"
+  },
+  {
+    "name": "ChatGPT-User",
+    "operator": "OpenAI",
+    "category": "assistant",
+    "purpose": "Fetches pages a ChatGPT user explicitly asked about; not a training crawler.",
+    "respectsRobots": true,
+    "website": "https://openai.com"
+  },
+  {
+    "name": "Claude-Code",
+    "operator": "Anthropic",
+    "category": "assistant",
+    "purpose": "Fetches documentation and pages requested during a Claude Code session."
+  },
+  {
+    "name": "Claude-SearchBot",
+    "operator": "Anthropic",
+    "category": "search",
+    "purpose": "Crawls pages to improve search results in Claude products.",
+    "respectsRobots": true,
+    "website": "https://www.anthropic.com"
+  },
+  {
+    "name": "Claude-User",
+    "operator": "Anthropic",
+    "category": "assistant",
+    "purpose": "Fetches pages when a Claude user asks about them; not used for training crawls.",
+    "respectsRobots": true,
+    "website": "https://www.anthropic.com"
+  },
+  {
+    "name": "Claude-Web",
+    "operator": "Anthropic",
+    "category": "other",
+    "purpose": "Undocumented Anthropic crawler historically used to fetch web content for Claude."
+  },
+  {
+    "name": "ClaudeBot",
+    "operator": "Anthropic",
+    "category": "training",
+    "purpose": "Crawls content to train Anthropic's Claude models.",
+    "respectsRobots": true,
+    "website": "https://www.anthropic.com"
+  },
+  {
+    "name": "cohere-ai",
+    "operator": "Cohere",
+    "category": "assistant",
+    "purpose": "Retrieves pages for user-initiated prompts in Cohere products.",
+    "website": "https://cohere.com"
+  },
+  {
+    "name": "cohere-training-data-crawler",
+    "operator": "Cohere to download training data for its LLMs (Large Language Models) that power its enterprise AI products",
+    "category": "training",
+    "purpose": "Downloads web content to train Cohere's models."
+  },
+  {
+    "name": "Crawl4AI",
+    "operator": "Crawl4AI project",
+    "category": "scraper",
+    "purpose": "Open-source crawler that extracts pages for AI pipelines."
+  },
+  {
+    "name": "Cursor",
+    "operator": "Cursor (Anysphere)",
+    "category": "assistant",
+    "purpose": "Fetches pages a developer requests inside the Cursor coding editor."
+  },
+  {
+    "name": "DeepSeekBot",
+    "operator": "DeepSeek",
+    "category": "training",
+    "purpose": "Crawls content to train DeepSeek's language models.",
+    "respectsRobots": false
+  },
+  {
+    "name": "Devin",
+    "operator": "Cognition",
+    "category": "assistant",
+    "purpose": "Fetches documentation and pages during Devin coding-agent sessions.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Diffbot",
+    "operator": "Diffbot",
+    "category": "scraper",
+    "purpose": "Scrapes pages into structured data sold via Diffbot's knowledge API.",
+    "website": "https://www.diffbot.com/"
+  },
+  {
+    "name": "Diffbot-User",
+    "operator": "Diffbot",
+    "category": "assistant",
+    "purpose": "Fetches pages a Diffbot user explicitly requested.",
+    "respectsRobots": true,
+    "website": "https://www.diffbot.com/"
+  },
+  {
+    "name": "DuckAssistBot",
+    "operator": "DuckDuckGo",
+    "category": "assistant",
+    "purpose": "Fetches sources for DuckDuckGo's Duck.ai assisted answers.",
+    "respectsRobots": true
+  },
+  {
+    "name": "ExaSearchBot",
+    "operator": "Exa",
+    "category": "search",
+    "purpose": "Crawls pages for Exa's AI-powered neural search index.",
+    "website": "https://exa.ai"
+  },
+  {
+    "name": "FacebookBot",
+    "operator": "Meta/Facebook",
+    "category": "training",
+    "purpose": "Crawls to train Meta's AI models.",
+    "respectsRobots": true
+  },
+  {
+    "name": "facebookexternalhit",
+    "operator": "Meta",
+    "category": "other",
+    "purpose": "Meta's link-preview fetcher for shared posts; also associated with AI data collection.",
+    "respectsRobots": false
+  },
+  {
+    "name": "FirecrawlAgent",
+    "operator": "Firecrawl",
+    "category": "scraper",
+    "purpose": "Scrapes and converts pages to markdown for LLM pipelines.",
+    "respectsRobots": true
+  },
+  {
+    "name": "FriendlyCrawler",
+    "operator": "Unknown",
+    "category": "training",
+    "purpose": "Experimental crawler building datasets for machine learning research.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Gemini-Deep-Research",
+    "operator": "Google",
+    "category": "assistant",
+    "purpose": "Fetches sources for Google Gemini's Deep Research reports."
+  },
+  {
+    "name": "Google-Agent",
+    "operator": "Google",
+    "category": "assistant",
+    "purpose": "Fetches pages during Google AI agent tasks on a user's behalf.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Google-CloudVertexBot",
+    "operator": "Google",
+    "category": "training",
+    "purpose": "Crawls customer sites to build models in Google's Vertex AI platform.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Google-Extended",
+    "operator": "Google",
+    "category": "training",
+    "purpose": "Lets Google use your content to train Gemini and other models.",
+    "respectsRobots": true
+  },
+  {
+    "name": "Google-Firebase",
+    "operator": "Google",
+    "category": "other",
+    "purpose": "Fetches pages on behalf of AI apps built with Google Firebase."
+  },
+  {
+    "name": "Google-Gemini-CLI",
+    "operator": "Google",
+    "category": "assistant",
+    "purpose": "Fetches pages a developer explicitly requests in the Gemini CLI tool."
+  },
+  {
+    "name": "Google-NotebookLM",
+    "operator": "Google",
+    "category": "assistant",
+    "purpose": "Fetches pages a NotebookLM user explicitly asks to import."
+  },
+  {
+    "name": "GoogleAgent-Mariner",
+    "operator": "Google",
+    "category": "assistant",
+    "purpose": "Browses sites during Google's Project Mariner agent tasks."
+  },
+  {
+    "name": "GoogleAgent-URLContext",
+    "operator": "Google",
+    "category": "assistant",
+    "purpose": "Fetches a specific URL when a Gemini app requests it via the URL context tool."
+  },
+  {
+    "name": "GoogleOther",
+    "operator": "Google",
+    "category": "training",
+    "purpose": "Google crawler used for data collection outside the main search index.",
+    "respectsRobots": true
+  },
+  {
+    "name": "GoogleOther-Image",
+    "operator": "Google",
+    "category": "training",
+    "purpose": "Google crawler that collects image data for research and development.",
+    "respectsRobots": true
+  },
+  {
+    "name": "GoogleOther-Video",
+    "operator": "Google",
+    "category": "training",
+    "purpose": "Google crawler that collects video data for research and development.",
+    "respectsRobots": true
+  },
+  {
+    "name": "GPTBot",
+    "operator": "OpenAI",
+    "category": "training",
+    "purpose": "Crawls content to train OpenAI's GPT models.",
+    "respectsRobots": true,
+    "website": "https://openai.com"
+  },
+  {
+    "name": "ICC-Crawler",
+    "operator": "NICT",
+    "category": "training",
+    "purpose": "NICT crawler that gathers Japanese and multilingual data for AI research.",
+    "respectsRobots": true,
+    "website": "https://nict.go.jp"
+  },
+  {
+    "name": "ImagesiftBot",
+    "operator": "Hive",
+    "category": "scraper",
+    "purpose": "Crawls images for Hive's image search and AI detection products.",
+    "respectsRobots": true,
+    "website": "https://imagesift.com"
+  },
+  {
+    "name": "img2dataset",
+    "operator": "img2dataset project",
+    "category": "training",
+    "purpose": "Downloads large image sets used to train multimodal models.",
+    "website": "https://github.com/rom1504/img2dataset"
+  },
+  {
+    "name": "ISSCyberRiskCrawler",
+    "operator": "ISS-Corporate",
+    "category": "training",
+    "purpose": "Scraper used to train ISS cybersecurity risk models.",
+    "respectsRobots": false,
+    "website": "https://iss-cyber.com"
+  },
+  {
+    "name": "Kimi-User",
+    "operator": "Moonshot AI",
+    "category": "assistant",
+    "purpose": "Fetches pages a Kimi user explicitly asked about."
+  },
+  {
+    "name": "LAIONDownloader",
+    "operator": "LAION",
+    "category": "training",
+    "purpose": "Bulk image downloader used to build LAION training datasets.",
+    "respectsRobots": false,
+    "website": "https://laion.ai/"
+  },
+  {
+    "name": "Linguee Bot",
+    "operator": "Linguee",
+    "category": "scraper",
+    "purpose": "Crawls bilingual text for Linguee's translation products.",
+    "respectsRobots": false,
+    "website": "https://www.linguee.com"
+  },
+  {
+    "name": "LinkupBot",
+    "operator": "Linkup",
+    "category": "search",
+    "purpose": "Crawls pages for Linkup's web search API used by AI applications."
+  },
+  {
+    "name": "Manus-User",
+    "operator": "Butterfly Effect",
+    "category": "assistant",
+    "purpose": "Fetches pages requested during Manus agent tasks."
+  },
+  {
+    "name": "meta-externalagent",
+    "operator": "Meta",
+    "category": "training",
+    "purpose": "Crawls web content to train Meta's AI models.",
+    "respectsRobots": true,
+    "website": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers"
+  },
+  {
+    "name": "Meta-ExternalAgent",
+    "operator": "Meta",
+    "category": "training",
+    "purpose": "Alternate-casing token of Meta's external AI training crawler.",
+    "respectsRobots": true
+  },
+  {
+    "name": "MistralAI-User",
+    "operator": "Mistral AI",
+    "category": "assistant",
+    "purpose": "Fetches pages requested by users of Mistral's Le Chat assistant."
+  },
+  {
+    "name": "Mozilla-Tabstack",
+    "operator": "Mozilla",
+    "category": "scraper",
+    "purpose": "Mozilla crawler that performs professional web data collection.",
+    "respectsRobots": true
+  },
+  {
+    "name": "NovaAct",
+    "operator": "Amazon Web Services",
+    "category": "assistant",
+    "purpose": "Fetches pages during Amazon Web Services' Nova Act agent workflows."
+  },
+  {
+    "name": "OAI-SearchBot",
+    "operator": "OpenAI",
+    "category": "search",
+    "purpose": "Crawls pages to surface them in ChatGPT search results.",
+    "respectsRobots": true,
+    "website": "https://openai.com"
+  },
+  {
+    "name": "omgili",
+    "operator": "Webz.io",
+    "category": "scraper",
+    "purpose": "Webz.io crawler whose scraped data is resold for market and AI research.",
+    "respectsRobots": true,
+    "website": "https://webz.io/"
+  },
+  {
+    "name": "omgilibot",
+    "operator": "Webz.io",
+    "category": "scraper",
+    "purpose": "Legacy Webz.io crawler whose data is resold.",
+    "respectsRobots": true,
+    "website": "https://webz.io/"
+  },
+  {
+    "name": "OpenAI",
+    "operator": "OpenAI",
+    "category": "other",
+    "purpose": "Generic OpenAI user-agent with unclear, undocumented purpose.",
+    "respectsRobots": true,
+    "website": "https://openai.com"
+  },
+  {
+    "name": "PanguBot",
+    "operator": "Huawei",
+    "category": "training",
+    "purpose": "Huawei crawler that collects data for its AI models."
+  },
+  {
+    "name": "Panscient",
+    "operator": "Panscient",
+    "category": "scraper",
+    "purpose": "Panscient crawler that collects and analyzes web data using ML.",
+    "respectsRobots": true,
+    "website": "https://panscient.com"
+  },
+  {
+    "name": "Perplexity-User",
+    "operator": "Perplexity",
+    "category": "assistant",
+    "purpose": "Fetches pages a Perplexity user explicitly requested, e.g. in browsing modes.",
+    "respectsRobots": false,
+    "website": "https://www.perplexity.ai/"
+  },
+  {
+    "name": "PerplexityBot",
+    "operator": "Perplexity",
+    "category": "search",
+    "purpose": "Crawls pages to cite them as sources in Perplexity answers.",
+    "respectsRobots": true,
+    "website": "https://www.perplexity.ai/"
+  },
+  {
+    "name": "PetalBot",
+    "operator": "Huawei",
+    "category": "search",
+    "purpose": "Huawei crawler that powers Petal Search and its AI assistant recommendations.",
+    "respectsRobots": true,
+    "website": "https://huawei.com/"
+  },
+  {
+    "name": "Scrapy",
+    "operator": "Zyte",
+    "category": "scraper",
+    "purpose": "Generic user-agent of the popular Zyte Scrapy scraping framework.",
+    "website": "https://www.zyte.com"
+  },
+  {
+    "name": "SemrushBot-OCOB",
+    "operator": "Semrush",
+    "category": "scraper",
+    "purpose": "Crawls sites for Semrush's ContentShake AI writing tool.",
+    "respectsRobots": true,
+    "website": "https://www.semrush.com/"
+  },
+  {
+    "name": "SemrushBot-SWA",
+    "operator": "Semrush",
+    "category": "scraper",
+    "purpose": "Checks URLs for Semrush's SEO Writing Assistant.",
+    "respectsRobots": true,
+    "website": "https://www.semrush.com/"
+  },
+  {
+    "name": "TavilyBot",
+    "operator": "Tavily",
+    "category": "search",
+    "purpose": "Crawls pages for Tavily's search API built for LLM applications."
+  },
+  {
+    "name": "TikTokSpider",
+    "operator": "ByteDance",
+    "category": "training",
+    "purpose": "ByteDance crawler associated with AI model training."
+  },
+  {
+    "name": "Timpibot",
+    "operator": "Timpi",
+    "category": "scraper",
+    "purpose": "Timpi crawler that scrapes data for training LLMs.",
+    "website": "https://timpi.io"
+  },
+  {
+    "name": "VelenPublicWebCrawler",
+    "operator": "Velen Crawler",
+    "category": "scraper",
+    "purpose": "Crawls public sites to build business datasets and ML models.",
+    "respectsRobots": true,
+    "website": "https://velen.io"
+  },
+  {
+    "name": "Webzio-Extended",
+    "operator": "Webz.io",
+    "category": "scraper",
+    "purpose": "Webz.io crawler that collects extended web data for resale, including AI training."
+  },
+  {
+    "name": "YandexAdditional",
+    "operator": "Yandex",
+    "category": "training",
+    "purpose": "Yandex crawler that scrapes and analyzes data for the YandexGPT model.",
+    "respectsRobots": true,
+    "website": "https://yandex.ru"
+  },
+  {
+    "name": "YouBot",
+    "operator": "You.com",
+    "category": "assistant",
+    "purpose": "Fetches content for You.com's AI search and chat answers.",
+    "respectsRobots": true,
+    "website": "https://about.you.com/youchat/"
+  }
+]
