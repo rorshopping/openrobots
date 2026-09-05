@@ -1,6 +1,6 @@
 import GeneratorTabs from "@/components/generator/GeneratorTabs";
 import BuyMeACoffee from "@/components/BuyMeACoffee";
-import { GITHUB_URL } from "@/lib/config";
+import { GITHUB_URL, BMC_SLUG } from "@/lib/config";
 
 const TRUST_ITEMS = [
   "100% in-browser — nothing is uploaded",
@@ -107,10 +107,12 @@ export default function Home() {
       <section id="generator" className="bg-white py-14">
         <div className="mx-auto max-w-6xl px-4">
           <GeneratorTabs />
-          <p className="mt-6 text-center text-sm text-zinc-500">
-            OpenRobots is free — if it saved you time,{" "}
-            <BuyMeACoffee variant="text" />
-          </p>
+          {BMC_SLUG && (
+            <p className="mt-6 text-center text-sm text-zinc-500">
+              OpenRobots is free — if it saved you time,{" "}
+              <BuyMeACoffee variant="text" />
+            </p>
+          )}
         </div>
       </section>
 
