@@ -12,22 +12,23 @@ Everything below is copy-paste ready. Live site: https://openrobots.vercel.app �
 - 100% in-browser: nothing is uploaded, no account, no tracking, data from the community ai.robots.txt project.
 - Key misconception to correct in comments: blocking "AI" does NOT hurt Google SEO (Google-Extended ≠ Googlebot).
 
-## 1. Show HN (highest-leverage single post)
+## 1. Hacker News — regular submission (NOT "Show HN")
 
-- **When**: Tuesday–Thursday, 8:00–10:00 AM US Eastern. Avoid Mondays/Fridays.
-- **Title** (exactly this style): `Show HN: OpenRobots – Free, open-source robots.txt generator for AI crawlers`
-- **URL**: `https://openrobots.vercel.app` (submit the site, not the repo — the repo is linked on the page)
-- **First comment** (post it yourself immediately after submitting):
+Submit as a **standard link post** (no "Show HN" tag — flag-prone for new accounts and not wanted here):
 
-> Hi HN! I built OpenRobots because every site owner now has to answer a new question — "do I let AI crawlers in?" — and the tools answering it are either Cloudflare-only or a $29+/mo signup-walled SaaS.
+- **When**: Tuesday–Thursday, 8:00–10:00 AM US Eastern (weekends bury posts).
+- **URL**: `https://openrobots.vercel.app`
+- **Title** (plain, objective — HN titles should not be promotional):
+  `OpenRobots – free, open-source robots.txt generator for AI crawlers`
+- **First comment** (post immediately after submitting, from your account):
+
+> I built this because every site owner now has to answer a new question — "do I let AI crawlers in?" — and the tools answering it are either Cloudflare-only or a $29+/mo signup-walled SaaS.
 >
 > It's a single-page client-side app: toggle through 82 known AI crawlers (GPTBot, ClaudeBot, Bytespider, Google-Extended…) grouped into training/assistant/search/scraper, hit a preset like "block training bots, keep assistants," and copy a correct robots.txt. It also audits your existing robots.txt for missing/misspelled AI bots and generates llms.txt.
 >
-> Everything runs in your browser — the crawler database is a bundled JSON snapshot of the community ai.robots.txt project, so there's no backend, no account, no tracking. MIT on GitHub: https://github.com/rorshopping/openrobots
->
-> Happy to answer questions — particularly interested in feedback on the "block training, allow assistants" default debate and the llms.txt generator.
+> Everything runs in your browser — the crawler database is a bundled JSON snapshot of the community ai.robots.txt project, so there's no backend, no account, no tracking. MIT: https://github.com/rorshopping/openrobots
 
-- **Reply strategy**: answer every comment in the first 3 hours; if someone says "just use Cloudflare," the answer is "not everyone is behind Cloudflare, and robots.txt is portable across any host."
+- **Reply strategy**: answer every comment in the first 3 hours; if someone says "just use Cloudflare," the answer is "not everyone is behind Cloudflare, and robots.txt is portable across any host." If the post gets zero traction in 2 hours, let it fall and retry the following week — don't repost the same URL quickly (HN autoflags duplicates).
 
 ## 2. X / Twitter
 
