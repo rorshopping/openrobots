@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 OpenRobots
 
-## Getting Started
+**Decide how AI sees your site.**
 
-First, run the development server:
+OpenRobots is a free, open-source, 100% client-side web tool that lets anyone decide how AI crawlers interact with their site. Generate a `robots.txt` that allows, blocks, or audits 50+ AI crawlers — plus a matching `llms.txt`. No backend, no tracking, no signup.
+
+<!-- TODO: add screenshot of the Generator tab here (assets/screenshot.png) -->
+
+## What it does
+
+The site is a single page with three tools in one tabbed interface:
+
+- **Generator** — toggle-based `robots.txt` generator covering 50+ known AI agents (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Bytespider…), grouped by category, with one-click presets like "Block all AI", "Block training only", and "Allow assistants, block training".
+- **Audit** — paste your existing `robots.txt` and see which AI agents it blocks, which notable ones are missing, and which user-agents are unknown or possibly misspelled.
+- **llms.txt** — a simple generator for the emerging [`llms.txt`](https://llmstxt.org) standard: site info plus structured link sections, output as ready-to-paste markdown.
+
+## Privacy: 100% client-side
+
+Everything runs in your browser. There is no backend, no API, no analytics, no cookies, and no account. Nothing you toggle or paste ever leaves your device — the tool works with networking disabled after the first load.
+
+## Quickstart
+
+Requires Node ≥ 20.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run the test suite and checks:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm test
+npm run lint
+```
 
-## Learn More
+## Environment variables
 
-To learn more about Next.js, take a look at the following resources:
+All optional — the site works with sensible defaults and hides optional integrations when unset.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | `https://openrobots.vercel.app` | Canonical site URL used for metadata/SEO. |
+| `NEXT_PUBLIC_BMC_SLUG` | _(unset)_ | Buy Me a Coffee username. Unset = support buttons don't render (never a dead link). See [docs/BUY-ME-A-COFFEE-SETUP.md](docs/BUY-ME-A-COFFEE-SETUP.md). |
+| `NEXT_PUBLIC_GITHUB_URL` | _(unset)_ | GitHub repo URL. Unset = GitHub links don't render. |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Set them locally in `.env.local`, or in production via `vercel env add`.
 
-## Deploy on Vercel
+## Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Crawler data: the community-maintained [ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt) list.
+- `llms.txt` format: the [llms.txt specification](https://llmstxt.org).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+[MIT](LICENSE) — © 2026 OpenRobots contributors.
