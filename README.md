@@ -48,7 +48,7 @@ All optional — the site works with sensible defaults and hides optional integr
 | Variable | Default | Purpose |
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | `https://openrobots.vercel.app` | Canonical site URL used for metadata/SEO. |
-| `NEXT_PUBLIC_BMC_SLUG` | _(unset)_ | Buy Me a Coffee username. Unset = support buttons don't render (never a dead link). See [docs/BUY-ME-A-COFFEE-SETUP.md](docs/BUY-ME-A-COFFEE-SETUP.md). |
+| `NEXT_PUBLIC_BMC_SLUG` | _(unset)_ | Buy Me a Coffee username. Unset = support buttons don't render (never a dead link). Widget generator: [buymeacoffee.com/brand](https://buymeacoffee.com/brand). |
 | `NEXT_PUBLIC_GITHUB_URL` | _(unset)_ | GitHub repo URL. Unset = GitHub links don't render. |
 
 Set them locally in `.env.local`, or in production via `vercel env add`.
